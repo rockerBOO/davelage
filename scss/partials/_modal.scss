@@ -1,0 +1,126 @@
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // This is modal bg
+  &:before{
+    content: "";
+    display: none;
+    background: rgba(0,0,0,.95);
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 10;
+
+    @media (max-width: 480px) {
+      background-color: #000;
+    }
+  }
+
+  &:target {
+    &:before {
+      display: block;
+    }
+
+    .contact-modal {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // .translate(0, 0);
+    }
+  }
+
+}
+
+$placeholder-color: rgba(white, .6);
+
+::-webkit-input-placeholder { color: $placeholder-color; }
+::-moz-placeholder { color: $placeholder-color; } /* firefox 19+ */
+:-ms-input-placeholder { color: $placeholder-color; } /* ie */
+input:-moz-placeholder { color: $placeholder-color; }
+
+.contact-modal {
+  width: 80%;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  z-index: 11;
+  background-color: black;
+  border-radius: 15px;
+  padding: .8rem;
+
+  form {
+    display: flex;
+    flex-flow: column wrap;
+
+    input, textarea {
+      background-color: #000;
+      border: 0;
+      padding: .6rem;
+      margin: .7rem;
+      font-size: 1.3rem;
+      color: rgba(white, .8);
+    }
+
+    textarea {
+      border: 2px solid $color-primary-4;
+    }
+
+    input {
+      border-bottom: 2px solid $color-primary-1;
+    }
+
+    input[type=submit] {
+      border-radius: .6rem;
+      box-shadow: 3px 3px 0 0 #111;
+
+      &:hover {
+        box-shadow: 2px 2px 0 0 #111;
+      }
+
+      &:active {
+        position: relative;
+        top: 1px;
+      }
+    }
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .6rem;
+    color: rgba(white, .8);
+
+    h3 {
+      font-weight: 300;
+    }
+
+    .right {
+      a {
+          width: 240px;
+          text-align: center;
+          color: rgba(white, .6);
+          background-color: #333;
+          border: 2px solid #444;
+          padding: .2rem;
+          border-radius: .6rem;
+          box-shadow: 3px 3px 0 0 #111;
+          text-decoration: none;
+          outline: none;
+
+          &:hover {
+            background-color: #444;
+            box-shadow: 2px 2px 0 0 #111;
+          }
+
+          &:active {
+            position: relative;
+            top: 1;
+            box-shadow: 0 0 0 0 #111;
+          }
+        }
+    }
+  }
+}
