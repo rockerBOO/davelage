@@ -31,8 +31,28 @@
         </div>
       </div>
     </header>
-    <section class="meta">
-
+    <section class="modal" id="contact" tabindex="-1"
+             role="dialog" aria-labelledby="contact"
+             aria-hidden="true">
+      <div class="contact-modal">
+        <div class="top">
+          <div class="title">
+            <h3>Send a message</h3>
+          </div>
+          <div class="right">
+            <a href="#!">Close</a>
+          </div>
+        </div>
+        <form method="post" accept-charset="UTF-8" autocomplete="false" enctype="multipart/form-data" action="https://rockerboo.wufoo.com/forms/zjy5h1i0wfp9g6/#public">
+          <input type="text" name="Field5" placeholder="Name" required="required" tabindex="1">
+          <input name="Field3" type="email" spellcheck="false"  placeholder="Email" required="required" tabindex="2">
+          <textarea name="Field4" rows="8" required="required" tabindex="3"></textarea>
+          <input type="hidden" id="idstamp" name="idstamp" value="oJPd2WK8qXNm1msfuUUbcOc+sfc72eyPH12MbEI0mUg=" />
+          <div>
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </div>
     </section>
     <section class="hero-layer">
       <div>
@@ -47,28 +67,6 @@
         <a href="#contact">Contact</a>
       </div>
     </section>
-    <!-- <section class="experience-layer">
-      <div class="experience">
-        <div>
-          <h3>Development</h3>
-          <ul>
-            <li>Full Product Development</li>
-            <li>Web Systems Architect</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Experience</h3>
-          <ul>
-            <li>PHP, Python, Go, Elixir, SQL</li>
-            <li>Javascript, CSS, HTML</li>
-            <li>MySQL, MongoDB</li>
-            <li>Nginx, Apache</li>
-            <li>Salt-Stack, Fabric</li>
-            <li>Docker, Vagrant</li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
     <section class="projects-layer">
       <div>
         <h2 class="section-title">Projects</h2>
@@ -171,28 +169,6 @@
         </div>
       </div>
     </footer>
-    <section class="modal" id="contact" tabindex="-1"
-             role="dialog" aria-labelledby="contact"
-             aria-hidden="true">
-      <div class="contact-modal">
-        <div class="top">
-          <div class="title">
-            <h3>Send a message</h3>
-          </div>
-          <div class="right">
-            <a href="#!">Close</a>
-          </div>
-        </div>
-        <form method="post" accept-charset="UTF-8" autocomplete="false" enctype="multipart/form-data" action="https://rockerboo.wufoo.com/forms/zjy5h1i0wfp9g6/#public">
-          <input type="text" name="Field5" placeholder="Name" required="required" tabindex="1">
-          <input name="Field3" type="email" spellcheck="false"  placeholder="Email" required="required" tabindex="2">
-          <textarea name="Field4" rows="8" required="required" tabindex="3"></textarea>
-          <input type="hidden" id="idstamp" name="idstamp" value="oJPd2WK8qXNm1msfuUUbcOc+sfc72eyPH12MbEI0mUg=" />
-          <div>
-            <input type="submit" value="Send">
-          </div>
-        </form>
-      </div>
-    </section>
+
   </body>
 </html>
