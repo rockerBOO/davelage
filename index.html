@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/app.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dave Lage - Web/Programming Architect. Making it happen since 1997.">
+    <meta name="description" content="Dave Lage - Web Architect/Developer. Making it happen since 1997.">
   </head>
   <body>
     <header>
@@ -70,15 +70,17 @@
         <a href="#contact">Contact</a>
       </div>
     </section>
-    <section class="projects-layer">
+
+
+    <section class="projects-layer" id="projects" name="projects">
       <div>
         <h2 class="section-title">Projects</h2>
         <div class="projects">
           <div>
-            <div class="img discovery">
+            <div class="logo discovery">
               <img src="imgs/discovery.svg">
             </div>
-            <h3><a href="http://discovery.rockerboo.net">Discovery</a> <a href="https://github.com/rockerBOO/twitch_discovery"><img src="imgs/social_media/svg/github.svg"></a></h3>
+            <h3><a href="#discovery">Discovery</a> <a href="https://github.com/rockerBOO/twitch_discovery"><img src="imgs/social_media/svg/github.svg"></a></h3>
             <p>Finding streams on Twitch</p>
             <ul>
               <li>Elixir</li>
@@ -91,10 +93,10 @@
             </ul>
           </div>
           <div>
-            <div class="img blur">
+            <div class="logo blur">
               <img src="imgs/blur.svg">
             </div>
-            <h3>Blur <a href="https://github.com/rockerBOO/blur"><img src="imgs/social_media/svg/github.svg"></a></h3>
+            <h3><a href="#blur">Blur</a> <a href="https://github.com/rockerBOO/blur"><img src="imgs/social_media/svg/github.svg"></a></h3>
             <p>Chat Bot for Twitch</p>
             <div class="tech">
               <ul>
@@ -105,10 +107,10 @@
             </div>
           </div>
           <div>
-            <div class="img virb">
+            <div class="logo virb">
               <img src="imgs/Virb_logo.svg">
             </div>
-            <h3><a href="http://virb.com">Virb</a> &#183; CTO</h3>
+            <h3><a href="#virb">Virb</a> &#183; CTO</h3>
             <p>Social Network/Website Builder</p>
             <ul>
               <li>PHP</li>
@@ -129,6 +131,88 @@
         </div>
       </div>
     </section>
+    <section class="project" id="discovery" name="discovery">
+      <div>
+        <div class="logo">
+          <img src="imgs/discovery.svg">
+        </div>
+
+        <h2><a href="http://discovery.rockerboo.net">Discovery</a></h2>
+
+        <div>
+          <p>I started to gravitate to talk show type streams like the Jackass Podcast, Dropped Frames which talked about what streamers were dealing with, and how to grow their communities. They were a range of streamers from small to large, growing and stagnate.</p>
+
+          <p>Continually they would discuss how they would have to make choices on what game to play because of how the browsing works based on viewers. If you play a popular game that has 700-1000 streamers playing it, and don't have a lot of viewers, you might never be seen. They would suggest playing non-popular games to possibly get a community going.</p>
+
+          <p>This really set a cord for me because it was purely based on how the Twitch organizes its content. With more options to find more streamers that were doing a quality stream that people might enjoy, there might be better communities for people to be apart of. A large number of people I talk to enjoy smaller streamers because they get lost in the larger communities, and can have a more intimate experience with the community and the streamers.</p>
+
+          <h3>I set out to change how people found streams.</h3>
+
+          <p>I immediately grasped the concern of finding these streamers and how to find them. With my experience making multiple social networks, I was able to create the site Discovery in a couple of weeks. Its goals are to make it easy to find smaller streamers with more control over the values you wish to see in a streamer.</p>
+
+          <p>Built on the brand new Phoenix Framework, which was written in close collaboration with the core Elixir developers. This allowed me to create a very fast, stable, and comprehensive site. Currently able to run autonomously as it caches streams every 5 minutes, and allows you to find those streamers that would normally get lost.</p>
+        </div>
+
+        <ul>
+          <li><a href="http://discovery.rockerboo.net">Visit Discovery</a></li>
+          <li><a href="#projects">Other Projects</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project" id="blur" name="blur">
+      <div>
+        <div class="logo">
+          <img src="imgs/blur.svg">
+        </div>
+
+        <h2><a href="https://github.com/rockerBOO/blur">Blur</a></h2>
+
+        <div>
+          <p>Blur is being developed to solve scalibility and fault tolerance in a chat bot. Flexibility in support of IRC, Web Sockets, and XMPP.</p>
+
+          <p>Blur has ambicious goals to be a bot that can also learn about your community and connect to them in many different ways. Analysing behaviors and patterns so streamers can get a better idea of how their community is evolving and communicating.</p>
+        </div>
+
+        <ul>
+          <li><a href="https://github.com/rockerBOO/blur">Blur Source</a></li>
+          <li><a href="#projects">Other Projects</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project" id="virb" name="virb">
+      <div>
+        <div class="logo">
+          <img src="imgs/Virb_logo.svg">
+        </div>
+
+        <h2><a href="">Virb</a></h2>
+
+        <div>
+          <p>Virb was originally developed to be a good looking, customizable social network. First of its kind.</p>
+
+          <p>Immediately took off in the web developer community, where they could customize their social network pages, as well as showcase their creative endeavors. Gained 250,000 users in the first 6 months, which gained high praise for its ease of use, clean design, and complete features.</p>
+
+          <p>Innovation happened in a few areas that are with us still. VirbTunes (Tracking song plays to show on your profile), Activity Feed (What you have done on the site, across all types of media), Contextual Notifications (When you get a comment or like, showing related comments and replies).</p>
+
+          <p>Continually developing to establish ourselves in the rapidly changing landscape, Virb had gone through 3 revisions. From the basic social network, we worked to establish a profiles based on the activity feed. As you upload new content, it would be added to your site in a tumble-log type format. This allowed users to upload any source of content from status updates, video, audio, photos, text, and quotes.</p>
+
+          <p>After a few years of developing these free tools with minimal to no advertising, there became a point where we had to decide to move on from Virb or to develop a new way for it to exist. Through conversations with <a href="http://www.mattrubinphoto.com/">Matt Rubin</a>, who had experience developing web sites for artists, we decided a new form of Virb would be a website builder.</p>
+
+          <p>This decision allowed us to develop into a paid model for web sites, by offering a simple, easy to customize web site for a competitive price. We established over 450,000 users for the social network, which over 2000 remained. We continually gained users and got praise over the simplicity of the product as well as the flexibility it gave the users.</p>
+
+          <p>Users could easily change between themes without a having to rework their design. This allowed them to update to new themes as well as be confident their content would look good. A lot of small businesses, artists, photographers, musicians were able to develop their sites with ease.</p>
+        </div>
+
+        <ul>
+          <li><a href="http://virb.com">Visit Virb</a></li>
+          <li><a href="#projects">Other Projects</a></li>
+        </ul>
+      </div>
+    </section>
+
+
     <section class="services-layer">
       <div>
         <h2 class="section-title">Services</h2>
