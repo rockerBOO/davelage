@@ -311,6 +311,10 @@ header {
     margin: 1rem;
     margin-top: 0;
     border-bottom: 2px solid #CCC;
+
+    @media (max-width: $max-width-small) {
+      margin: 0;
+    }
   }
 
   ul {
@@ -329,7 +333,14 @@ header {
     float: left;
     margin: 1rem;
     margin-left: 0;
+
+    @media (max-width: $max-width-small) {
+      float: none;
+      margin: 0 auto;
+    }
   }
+
+
 }
 
 @keyframes showProject {
