@@ -34,6 +34,11 @@ abbr {
   cursor: help;
 }
 
+p {
+  font-family: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 300;
+}
+
 a {
   color: $color-primary-0;
   text-decoration: none;
@@ -298,6 +303,7 @@ header {
 
   &>div {
     padding: .6rem;
+
   }
 
   p {
