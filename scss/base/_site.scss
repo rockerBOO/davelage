@@ -292,7 +292,7 @@ header {
     display: flex;
     visibility: visible;
     box-shadow: -5px 0 5px $color-primary-1;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     animation: showProject 400ms ease-in-out both;
   }
 
@@ -313,12 +313,6 @@ header {
     border-bottom: 2px solid #CCC;
   }
 
-  h3 {
-    background: #512DA8;
-    color: #fff;
-    padding: 1rem;
-  }
-
   ul {
     list-style: none;
     display: flex;
@@ -327,12 +321,6 @@ header {
 
     li {
       flex: 0 1 auto;
-    }
-
-    li:first-of-type {
-      padding-right: 1rem;
-      margin-right: 1rem;
-      border-right: 1px solid #CCC;
     }
   }
 
